@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9vh;
+    margin: auto;
+    background: #22223b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0.5rem 0.3rem;
+    height: auto;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f2e9e4;
+    transition: all 0.3s ease;
+    margin: 0 1rem;
+}
+
+.nav-link:hover {
+    color: #c9ada7;
+}
+
+.register-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.register-container button {
+    color: #f2e9e4;
+    background: #c9ada7;
+    border: none;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #f2e9e4;
+    color: #22223b;
+    border-radius: 10px;
+}
+
+.toggle-button {
+    font-size: 1.8rem;
+    color: #f2e9e4;
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    display: none;
+    margin: 0 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: inline-block;
+        width: 100%;
+        min-height: auto;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .logo-container {
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.3s ease;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .register-container {
+        height: 0;
+        overflow: hidden;
+    }
+    .active {
+        height: 10rem;
+    }
+    .active-register{
+        height: 3rem;
+        margin: 1rem;
+    }
+}
