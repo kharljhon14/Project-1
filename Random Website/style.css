@@ -15,6 +15,10 @@ header {
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background: linear-gradient(180deg, #f2e9e4, #9a8c98);
+}
+
 .logo {
     height: 50px;
     cursor: pointer;
@@ -83,11 +87,181 @@ nav {
     right: 0;
 }
 
+.review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review{
+    width: 70vw;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    background-color: #4a4e69;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+main{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.title h2{
+    font-size: 2rem;
+    color: #22223b;
+}
+
+.underline{
+    height: 0.25rem;
+    width: 8rem;
+    background-color: #c9ada7;
+    margin: 0 auto;
+}
+
+.review-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+}
+
+.person-img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+}
+
+.name{
+    color: #f2e9e4;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.job{
+    color: #c9ada7;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+.info{
+    text-align: center;
+    color: #f2e9e4;
+    font-size: .9rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.buttons{
+    margin: 1.5rem auto;
+}
+
+.prev-button, .next-button{
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: #f2e9e4;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+    padding: 0 .7rem;
+}
+
+.prev-button:hover, .next-button:hover{
+    color: #c9ada7;
+}
+
+.cards-container{
+    width: 70%;
+    margin: auto;
+    margin-top: 4rem;
+    min-height: 100vh;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    background: #f2e9e4;
+    text-align: center;
+    width: 30%;
+    min-height: 75vh;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 5px #22223b;
+}
+
+.card-img{
+    margin: 20px 0;
+}
+
+.card-img img{ 
+    width: 50%;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card h3{
+    color: #4a4e69;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card p{
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #22223b;
+    margin-bottom: 10px;
+}
+
+.card span{
+    font-size: 2.5rem;
+    color: #4a4e69;
+}
+
+.line{
+    height: 0.25rem;
+    width: 90%;
+    background-color: #22223b;
+    margin: 0 auto;
+}
+
+footer{
+    background: #22223b;
+    color: #f2e9e4;
+    font-family: 'Open Sans', sans-serif;
+}
+
 @media screen and (max-width: 700px) {
     header {
         display: inline-block;
         width: 100%;
-        min-height: auto;
     }
     .toggle-button {
         display: flex;
@@ -121,5 +295,27 @@ nav {
     .active-register{
         height: 3rem;
         margin: 1rem;
+    }
+
+    .review-container{
+        display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+        margin-bottom: 40px;
+        min-height: 50vh;
+    }
+
+    .card h3{
+        font-size: 1.2rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
     }
 }
