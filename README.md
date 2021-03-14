@@ -1,2 +1,2 @@
 # Project-1
-made using HTML CSS and js
+made using EJS, Express JS, CSS, Method-override, Node JS 
