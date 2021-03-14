@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("partials/css_style") %> 
+    <link rel="stylesheet" href="/css/new.css">
+    <title>Enroll</title>
+</head>
+<body>
+    <%- include("partials/header_links") %>
+    <main>
+        <section class="enroll-container">
+            <h1>Enrollment</h1>
+            <form action="/students" method="POST">
+                <label for="lastname">Last name :</label>
+                <input type="text" name="lastname" id="lastname" required>
+                <label for="firstname">First name :</label>
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="course">Course :</label>
+                <input type="text" name="course" id="course" required>
+                <label for="contact">Contact :</label>
+                <input type="text" name="contact" id="contact" required>
+                <button>Submit</button>
+            </form>
+        </section>
+       
+    </main>
+</body>
+</html>

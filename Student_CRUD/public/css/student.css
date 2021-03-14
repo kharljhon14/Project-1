@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+.students-data {
+   margin-top: 10rem;
+   font-family: "Open Sans", sans-serif;
+}
+.students-data h1 {
+   text-align: center;
+   font-size: 40px;
+}
+
+.students {
+   width: 50%;
+   min-height: 50vh;
+   margin: auto;
+   text-align: start;
+   list-style: none;
+   background-color: #264653;
+   padding: 20px 0;
+   border-radius: 10px;
+}
+
+.students li {
+   margin: 40px auto;
+   width: 50%;
+   color: #e9c46a;
+}
+
+.students .underline {
+   height: 0.2rem;
+   width: 100%;
+   margin: auto;
+   margin-top: 20px;
+   border-radius: 10px;
+   background-color: beige;
+}
+
+.students h3 {
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+
+.cta-container {
+   width: 50%;
+   margin: auto;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.cta {
+   padding: 5px 20px;
+   text-decoration: none;
+   color: #264653;
+   text-transform: uppercase;
+}
+
+#edit-button {
+   background-color: lightblue;
+   border-radius: 5px;
+}
+
+#delete-button {
+   background-color: lightcoral;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <%- include("partials/css_style") %>
+      <link rel="stylesheet" href="/css/student.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <%- include("partials/header_links") %>
+      <main>
+         <section class="students-data">
+            <h1>Students</h1>
+            <ul class="students">
+               <% for(let s of students) { %>
+               <li>
+                  <h3>
+                     <span>Name :</span> <%= s.lastname %>, <%= s.firstname %>
+                  </h3>
+                  <p><span>Course :</span> <%= s.course %></p>
+                  <p><span>ID # :</span> <%= s.id %></p>
+                  <p><span>Contact # :</span> <%= s.contact %></p>
+                  <div class="cta-container">
+                     <a
+                        class="cta"
+                        id="edit-button"
+                        href="/students/<%= s.id %>/edit"
+                        >Edit</a
+                     >
+                     <form
+                        action="/students/<%= s.id %>?_method=delete"
+                        method="POST"
+                     >
+                        <button class="cta" id="delete-button">Delete</button>
+                     </form>
+                  </div>
+                  <div class="underline"></div>
+               </li>
+               <% } %>
+            </ul>
+         </section>
+      </main>
+   </body>
+</html>
